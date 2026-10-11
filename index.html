@@ -29,7 +29,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #070707;
+            background-color: #050505;
             margin: 0;
             overflow: hidden; /* Hide scrollbars for the animated background */
         }
@@ -47,7 +47,7 @@
         .orb-1 {
             width: 450px;
             height: 450px;
-            background: #24A1DE; /* Telegram Blue */
+            background: #D4AF37; /* Telegram Blue */
             top: -100px;
             left: -150px;
         }
@@ -55,7 +55,7 @@
         .orb-2 {
             width: 500px;
             height: 500px;
-            background: #1976D2; /* Deeper Blue */
+            background: #8B1E2D; /* Deeper Blue */
             bottom: -200px;
             right: -100px;
             animation-delay: -6s;
@@ -68,10 +68,10 @@
 
         /* Glassmorphism Card */
         .glass-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: linear-gradient(145deg, rgba(30, 24, 14, 0.72), rgba(10, 10, 10, 0.94));
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.22);
             box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.6);
             z-index: 10;
         }
@@ -81,7 +81,7 @@
             position: absolute;
             inset: -4px;
             border-radius: 50%;
-            background: conic-gradient(from 0deg, transparent 0%, transparent 40%, #24A1DE 100%);
+            background: conic-gradient(from 0deg, transparent 0%, transparent 38%, #D4AF37 72%, #8B1E2D 100%);
             animation: rotate 2.5s linear infinite;
             z-index: 1;
         }
@@ -90,7 +90,7 @@
             content: '';
             position: absolute;
             inset: 3px; /* Inner cut */
-            background: #0f1115; /* Match logo background */
+            background: #101010; /* Match logo background */
             border-radius: 50%;
         }
 
@@ -100,9 +100,9 @@
 
         /* Pulse animation for the main CTA button */
         @keyframes pulse-shadow {
-            0% { box-shadow: 0 0 0 0 rgba(36, 161, 222, 0.6); }
-            70% { box-shadow: 0 0 0 25px rgba(36, 161, 222, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(36, 161, 222, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6); }
+            70% { box-shadow: 0 0 0 25px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
         }
         
         .btn-pulse {
@@ -111,12 +111,12 @@
         
         /* Subtle text shadow for main heading */
         .glow-text {
-            text-shadow: 0 2px 20px rgba(36, 161, 222, 0.4);
+            text-shadow: 0 2px 20px rgba(212, 175, 55, 0.4);
         }
         
         .neon-text {
-            color: #24A1DE;
-            text-shadow: 0 0 10px rgba(36, 161, 222, 0.8), 0 0 20px rgba(36, 161, 222, 0.4);
+            color: #D4AF37;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.4);
         }
     </style>
 </head>
@@ -131,8 +131,8 @@
         <div class="relative w-32 h-32 mb-6 mt-2 flex items-center justify-center">
             <div class="rotating-ring"></div>
             <!-- Inner Logo container placed above the ring via z-index -->
-            <div class="relative z-10 w-[116px] h-[116px] bg-[#0f1115] rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(36,161,222,0.3)]">
-                <i class="fa-brands fa-telegram text-[4.5rem] text-[#24A1DE]" style="margin-right: 4px; margin-top: 2px;"></i>
+            <div class="relative z-10 w-[116px] h-[116px] bg-[#101010] rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(212,175,55,0.3)]">
+                <i class="fa-brands fa-telegram text-[4.5rem] text-[#D4AF37]" style="margin-right: 4px; margin-top: 2px;"></i>
             </div>
         </div>
 
@@ -149,26 +149,26 @@
         <!-- Features list -->
         <div class="flex items-center justify-center gap-5 w-full mb-8 text-sm font-semibold text-gray-200 bg-white/5 py-3 px-4 rounded-xl border border-white/10 shadow-inner">
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-shield-check text-[#24A1DE]"></i>
+                <i class="fa-solid fa-shield-check text-[#D4AF37]"></i>
                 <span>100% Trusted</span>
             </div>
             <div class="w-[1px] h-5 bg-white/20"></div>
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-bolt text-[#24A1DE]"></i>
+                <i class="fa-solid fa-bolt text-[#D4AF37]"></i>
                 <span>Instant Reply</span>
             </div>
         </div>
 
         <!-- Timer Box -->
-        <div class="w-full bg-black/50 border border-[#24A1DE]/40 rounded-2xl p-4 flex flex-col sm:flex-row justify-center items-center gap-3 mb-8 shadow-inner relative overflow-hidden">
-            <div class="absolute inset-0 bg-[#24A1DE]/10 blur-2xl"></div>
+        <div class="w-full bg-black/50 border border-[#D4AF37]/40 rounded-2xl p-4 flex flex-col sm:flex-row justify-center items-center gap-3 mb-8 shadow-inner relative overflow-hidden">
+            <div class="absolute inset-0 bg-[#D4AF37]/10 blur-2xl"></div>
             <span class="text-gray-300 text-xs font-bold tracking-[0.2em] uppercase relative z-10">Offer Ends In:</span>
             <span id="timer" class="neon-text font-extrabold text-2xl tabular-nums tracking-wider relative z-10">10:00</span>
         </div>
 
         <!-- CTA Button -->
         <a href="https://t.me/+FTW74SuhXVIzMTZl" target="_blank" rel="noopener noreferrer" 
-           class="w-full bg-[#24A1DE] hover:bg-[#1f8fc4] text-white font-extrabold py-4 px-6 rounded-2xl flex items-center justify-center gap-3 transition-all duration-300 transform hover:-translate-y-1 btn-pulse shadow-[0_0_20px_rgba(36,161,222,0.5)] border border-[#4db8eb]/30">
+           class="w-full bg-[#D4AF37] hover:bg-[#B8941F] text-white font-extrabold py-4 px-6 rounded-2xl flex items-center justify-center gap-3 transition-all duration-300 transform hover:-translate-y-1 btn-pulse shadow-[0_0_20px_rgba(212,175,55,0.5)] border border-[#F0D778]/30">
             <i class="fa-brands fa-telegram-plane text-2xl"></i>
             <span class="text-[15px] sm:text-base tracking-wider uppercase">JOIN PLAYBOY</span>
         </a>
