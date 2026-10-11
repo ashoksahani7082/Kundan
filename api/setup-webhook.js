@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ ok: false, error: "TELEGRAM_BOT_TOKEN is not configured" });
   }
 
-  const webhookUrl = "https://global-rust.vercel.app/api/telegram";
+  const webhookUrl = "https://kundan-xi.vercel.app/api/telegram";
 
   try {
     const response = await fetch(
