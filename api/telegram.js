@@ -26,7 +26,7 @@ async function redisCommand(command) {
 
 async function sendMetaSubscribe(attribution, eventTime, eventId) {
   const accessToken = process.env.META_CAPI_ACCESS_TOKEN;
-  const pixelId = process.env.META_PIXEL_ID || "1351302446502434";
+  const pixelId = process.env.META_PIXEL_ID || "1128434279699860";
   const apiVersion = process.env.META_GRAPH_API_VERSION || "v24.0";
   const testEventCode = process.env.META_TEST_EVENT_CODE;
 
@@ -54,7 +54,7 @@ async function sendMetaSubscribe(attribution, eventTime, eventId) {
     event_time: eventTime,
     event_id: eventId,
     action_source: "website",
-    event_source_url: attribution?.landing_url || "https://global-rust.vercel.app/",
+    event_source_url: attribution?.landing_url || "https://kundan-xi.vercel.app/",
     user_data: userData
   };
 
