@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const redisUrl = process.env.KV_REST_API_URL;
   const redisToken = process.env.KV_REST_API_TOKEN;
-  const chatId = "-1004405476687";
+  const chatId = "-1003941905407";
 
   if (!token) {
     return res.status(500).json({ ok: false, error: "TELEGRAM_BOT_TOKEN is not configured" });
