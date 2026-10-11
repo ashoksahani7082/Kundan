@@ -150,6 +150,8 @@ export default async function handler(req, res) {
       }
 
       console.log("Telegram join request saved", {
+        chat_id: subscriber.chat_id,
+        chat_title: request.chat?.title || null,
         user_id: subscriber.telegram_user_id,
         username: subscriber.telegram_username,
         source: subscriber.source,
